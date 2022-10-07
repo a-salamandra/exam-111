@@ -1,7 +1,8 @@
-from random import random, randrange
+from random import randrange
 import time
 
 def insertion_sort(container):
+
    for i in range(1, len(container)):
         key = container[i]
         j = i - 1
@@ -29,10 +30,10 @@ def quick_sort(container):
     else:
         return container
 
+
 if __name__ == '__main__':
 
     arr = [randrange(13, 26) for _ in range(10**6)]
-
     time_list = []
 
     for _ in range(11):
